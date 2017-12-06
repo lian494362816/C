@@ -1,0 +1,8 @@
+03_Chapter
+	3_5_1_share_memory.c 
+		验证一个函数内两个代码块中的变量是否使用相同的内存;
+		会使用相同的内存
+	
+07_Chaper
+	variavle_arg.c
+		使用可变参求平均值
