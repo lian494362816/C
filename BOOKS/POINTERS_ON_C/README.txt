@@ -33,3 +33,6 @@
 		测试 *++argv 和 *++*argv
 			*++argv 会遍历argv的所有字符串-> argv[i]
 			*++*argv 会遍历argv中一个字符串的所有单个字符 -> argv[const][i]
+
+14_Chapter
+	测试宏 __FILE__, __LINE__, __DATE__, __TIME__, __STDC__
