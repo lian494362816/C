@@ -44,4 +44,6 @@
 		测试 scanf 函数	
 	ungetc
 		测试 ungetc 函数，把字符返回给流
-
+	fread_fwrite	
+		测试 fwrite fread		
+	
