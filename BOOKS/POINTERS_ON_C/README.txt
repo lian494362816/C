@@ -36,3 +36,12 @@
 
 14_Chapter
 	测试宏 __FILE__, __LINE__, __DATE__, __TIME__, __STDC__
+
+15_Chapter
+	perror
+		测试 perror 函数	
+	scanf
+		测试 scanf 函数	
+	ungetc
+		测试 ungetc 函数，把字符返回给流
+
