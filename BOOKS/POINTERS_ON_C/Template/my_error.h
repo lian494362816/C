@@ -1,5 +1,7 @@
 #ifndef __MY_ERROR_H_
 
+#include <stdio.h>
+
 #define FG_BLACK     "\033[30m"
 #define FG_RED       "\033[31m"
 #define FG_GREEN     "\033[32m"

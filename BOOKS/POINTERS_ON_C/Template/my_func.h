@@ -1,5 +1,6 @@
 #ifndef __MY_FUNC_H_
 
+#include <stdlib.h>
 #include "my_error.h"
 
 #define MALLOC(n, type)  (type *)malloc((n) * (sizeof(type)))

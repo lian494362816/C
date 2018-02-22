@@ -13,7 +13,12 @@ typedef  signed long int     S64;
 typedef  float               F32;
 typedef  double              F64;
 
-#define MY_SUCCESS			(1)
-#define MY_FAIL             (0)
+typedef  signed char         MY_BOOL;
+
+#define MY_SUCCESS			(0)
+#define MY_FAIL             (-1)
+
+#define MY_FALSE            (0)
+#define MY_TRUE				(1)
 
 #endif //__TYPE_H_

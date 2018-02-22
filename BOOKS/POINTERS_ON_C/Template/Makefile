@@ -8,7 +8,8 @@ INCLUDE_PATH= -I ./
 INCLUDE=  my_type.h\
 		  list.h\
 		  my_error.h\
-		  my_func.h
+		  my_func.h\
+		  my_queue.h
 
 all:$(TARGET)
 
