@@ -1,4 +1,6 @@
 #ifndef __LIST_H_
+#define __LIST_H_
+
 #include <stdio.h>
 
 #include "my_type.h"

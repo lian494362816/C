@@ -1,4 +1,5 @@
 #ifndef __MY_QUEUE_H_
+#define __MY_QUEUE_H_
 
 #include "my_type.h"
 

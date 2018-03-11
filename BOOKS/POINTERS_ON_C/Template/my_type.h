@@ -1,4 +1,5 @@
 #ifndef __TYPE_H_
+#define __TYPE_H_
 
 typedef  unsigned char       U8;
 typedef  unsigned short      U16;

@@ -1,4 +1,5 @@
 #ifndef __MY_FUNC_H_
+#define __MY_FUNC_H_
 
 #include <stdlib.h>
 #include "my_error.h"

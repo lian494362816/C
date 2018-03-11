@@ -1,4 +1,5 @@
 #ifndef __MY_ERROR_H_
+#define __MY_ERROR_H_
 
 #include <stdio.h>
 
@@ -24,7 +25,7 @@
 
 #define MY_INFO(...) do{\
 printf(FG_GREEN);\
-printf("[%s] [%s]","INFO", __FUNCTION__);\
+printf("[%s] [%s]:","INFO", __FUNCTION__);\
 printf(__VA_ARGS__);\
 printf(BG_BLACK);\
 printf(NONE);\
@@ -33,7 +34,7 @@ fflush(NULL);\
 
 #define MY_WARING(...) do{\
 printf(FG_YELLOW);\
-printf("[%s] [%s]","WARING", __FUNCTION__);\
+printf("[%s] [%s]:","WARING", __FUNCTION__);\
 printf(__VA_ARGS__);\
 printf(BG_BLACK);\
 printf(NONE);\
