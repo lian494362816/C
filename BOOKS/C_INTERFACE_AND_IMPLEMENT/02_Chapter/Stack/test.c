@@ -42,6 +42,5 @@ int main(int argc, char *argv[])
 		printf("%p\n", ps32Tmp);
 	}
 
-	
 	return MY_SUCCESS;
 }
