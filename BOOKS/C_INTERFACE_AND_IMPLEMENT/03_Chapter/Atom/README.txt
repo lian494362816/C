@@ -12,3 +12,6 @@ S8 *my_atom_string(const S8 *ps8Str);
 
 //传递一个整数来创建一个原子
 S8 *my_atom_init(S32 s32Num);
+
+//打印原子哈希表中每个哈希链表的长度，每一个长度代表该哈希链表下面有一个原子
+my_atom_print(void)

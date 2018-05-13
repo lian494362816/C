@@ -42,5 +42,7 @@ int main(int argc, char *argv[])
 		printf("%p\n", ps32Tmp);
 	}
 
+	Stack_Free(&pstStack);
+
 	return MY_SUCCESS;
 }

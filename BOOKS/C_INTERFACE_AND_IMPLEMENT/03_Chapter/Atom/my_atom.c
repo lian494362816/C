@@ -83,9 +83,9 @@ S8 *my_atom_new(const S8 *ps8Str, S32 s32Len)
    // MY_INFO("s32Len = %d\n", s32Len);
 
     //散列的查表算法
-	for (u32Head = 0; u32Head < s32Len; u32Head ++)
+	for (u32Head = 0, s32i = 0; s32i < s32Len; s32i ++)
 	{
-		u32Head = (u32Head << 1) + _gu32Scatter[((U8) ps8Str[u32Head])];
+		u32Head = (u32Head << 1) + _gu32Scatter[((U8) ps8Str[s32i])];
         //MY_INFO("u32Head = %d, s32Len = %d\n", u32Head, s32Len);
 	}
 
@@ -167,10 +167,10 @@ S32 my_atom_print(void)
         for (pstAtom = _gpasBuckets[s32i]; pstAtom; pstAtom = pstAtom->pstLink)
         {
             as32Size[s32i]++;
-            printf("[%d], %s\n", s32i, pstAtom->ps8Str);
+            /* printf("[%d], %s\n", s32i, pstAtom->ps8Str); */
         }
     }
-    printf("==================\n");
+    /* printf("==================\n"); */
 
     for (s32i = 0; s32i < NELEMS(_gpasBuckets); s32i++)
     {
