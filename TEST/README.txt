@@ -36,5 +36,12 @@ ARM
 		asm_mrs.c
 			操作特殊寄存器CPSR 
 		asm_shift.c
-			位移，算数左右，逻辑左
+			位移，算数左右，逻辑左 
+		asm_ldr_str.c    
+			将指针传给寄存器
+		asm_string.c
+			计算字符串的长度
+		asm_copy.c 
+			复制字符串
+
 
