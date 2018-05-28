@@ -60,6 +60,16 @@ ARM
 
 			04_led_advance
 				4个led闪烁
+
+			05_buzzer
+				启动蜂鸣器
+
+			06_key
+				按下键，打印字符串
+
+			07_led_buzzer_key
+				按下键，led点亮, 蜂鸣器启动，打印字符串
+				
 				
 				
 
