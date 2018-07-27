@@ -21,3 +21,6 @@
 		
 Makefile
 	简单的Makefile 测试
+
+007_clock
+	配置时钟
