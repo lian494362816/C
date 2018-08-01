@@ -20,3 +20,15 @@
 2018_07
 	select.c
 		linux select 简单例子
+
+	01_printf.c
+		通过指针确定可变参数, 先偏移再取值
+
+	02_printf.c
+		通过指针确定可变参数，取值后再偏移
+
+	03_printf.c
+		通过va_start va_arg va_end 实现可变参的取值
+
+	04_printf.c
+		va_list va_start va_arg va_end 源码
