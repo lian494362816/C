@@ -27,3 +27,6 @@ Makefile
 
 008_uart
 	简单的串口程序
+
+009_uart_printf
+	实现简单printf 函数，总的bin大小不能超过4K
