@@ -30,3 +30,6 @@ Makefile
 
 009_uart_printf
 	实现简单printf 函数，总的bin大小不能超过4K
+
+010_nor_flash_tacc
+	nor flash 时钟修改函数
