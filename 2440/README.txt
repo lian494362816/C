@@ -33,3 +33,6 @@ Makefile
 
 010_nor_flash_tacc
 	nor flash 时钟修改函数
+
+011_dram
+	sdram测试程序，注意烧录完后必须拔掉JTAG然后重启上电，不然即使不初始化sdram测试程序也会执行成功
