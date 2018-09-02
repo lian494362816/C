@@ -53,4 +53,4 @@ Makefile
 	007 
 		改进lds 并将所有的代码拷贝进sdram
 	008 
-		使用C拷贝代码进sdram ，使用C清除bbs段
+		使用C拷贝代码进sdram ，使用C清除bbs段, 本来想使用ldr pc 来实现跳转，但是程序却无法回来
