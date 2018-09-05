@@ -23,12 +23,16 @@
 
 	01_printf.c
 		通过指针确定可变参数, 先偏移再取值
+		编译时，需要加上-m32
 
 	02_printf.c
 		通过指针确定可变参数，取值后再偏移
+		编译时，需要加上-m32
 
 	03_printf.c
 		通过va_start va_arg va_end 实现可变参的取值
+		编译时，需要加上-m32
 
 	04_printf.c
 		va_list va_start va_arg va_end 源码
+		编译时，需要加上-m32
