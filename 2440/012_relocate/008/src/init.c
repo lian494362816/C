@@ -134,7 +134,7 @@ void clear_bbs(void)
     volatile unsigned int *src = (unsigned int *)&__bbs_start;
     volatile unsigned int *end = (unsigned int *)&__end;
 
-    while(src < end)
+    while(src <= end)
     {
         *src ++ = 0;
     }
