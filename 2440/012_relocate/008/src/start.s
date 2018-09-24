@@ -64,8 +64,12 @@ _start:
     /* copy .data .rodata. .text to SDRAM */
     bl copy2sdram
 
-    /* clear bbs segment */
-    bl clear_bbs
+    /* clear bss segment */
+    bl clear_bss
+
+	bl uart0_init
+
+	bl print_positon
 
     ldr pc, =main /* abs jump to main */
 

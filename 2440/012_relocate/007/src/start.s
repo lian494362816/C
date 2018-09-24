@@ -64,7 +64,7 @@ _start:
 	/* relocate .data */
 	ldr r1, =0          /* data segment address in bin file */
 	ldr r2, =_start     /* data segment relocate address, running-address */
-	ldr r3, =_bbs_start       /* data segment end addrerss */
+	ldr r3, =_bss_start       /* data segment end addrerss */
 
 cpy:
 	ldr r4, [r1]
@@ -75,7 +75,7 @@ cpy:
 	ble cpy
 
 	/* clear bss segment */
-	ldr r1, =_bbs_start
+	ldr r1, =_bss_start
 	ldr r2, =_end
 
 clean:

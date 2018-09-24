@@ -16,8 +16,8 @@ SECTIONS {
 	.data : { *(.data) }
 
 	. = ALIGN(4) ;
-	_bbs_start = . ;
-	.bbs : { *(.bbs) *(.COMMON) }
+	_bss_start = . ;
+	.bss : { *(.bss) *(.COMMON) }
 	_end = . ;
 
 }

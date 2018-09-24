@@ -39,7 +39,7 @@ Makefile
 
 012_relocate
 	001	
-		测试代码在程序中的位置，如bbs data text rodata
+		测试代码在程序中的位置，如bss data text rodata
 	002 
 		使用.lds重定位代码
 	003
@@ -53,4 +53,4 @@ Makefile
 	007 
 		改进lds 并将所有的代码拷贝进sdram
 	008 
-		使用C拷贝代码进sdram ，使用C清除bbs段, 本来想使用ldr pc 来实现跳转，但是程序却无法回来
+		使用C拷贝代码进sdram ，使用C清除bss段, 本来想使用ldr pc 来实现跳转，但是程序却无法回来

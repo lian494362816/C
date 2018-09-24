@@ -116,11 +116,11 @@ int bank6_sdram_init(void)
 /* copy.text .data .rodata to SDRAM */
 void copy2sdram(void)
 {
-    extern int __copy_code_start, __bbs_start;
+    extern int __copy_code_start, __bss_start;
 
     volatile unsigned int *src = (unsigned int *)0;
     volatile unsigned int *dst = (unsigned int *)&__copy_code_start;
-    volatile unsigned int *end = (unsigned int *)&__bbs_start;
+    volatile unsigned int *end = (unsigned int *)&__bss_start;
 
     while(dst < end)
     {
@@ -128,14 +128,28 @@ void copy2sdram(void)
     }
 }
 
-void clear_bbs(void)
+void clear_bss(void)
 {
-    extern int __bbs_start, __end;
-    volatile unsigned int *src = (unsigned int *)&__bbs_start;
+    extern int __bss_start, __end;
+    volatile unsigned int *src = (unsigned int *)&__bss_start;
     volatile unsigned int *end = (unsigned int *)&__end;
 
     while(src <= end)
     {
         *src ++ = 0;
     }
+}
+
+void print_positon(void)
+{
+    extern int __copy_code_start, __bss_start, __end;
+
+	volatile unsigned int *code_start = (unsigned int *)&__copy_code_start;
+	volatile unsigned int *bss_start= (unsigned int *)&__bss_start;
+	volatile unsigned int *end= (unsigned int *)&__end;
+
+	printf("code_start:%x\n", code_start);
+	printf("bss_start:%x\n", bss_start);
+	printf("end:%x\n", end);
+
 }
