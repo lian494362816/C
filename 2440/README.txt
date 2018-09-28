@@ -58,5 +58,6 @@ Makefile
 013_excption
     001_undef
         测试undef excption
-
+    002_swi
+        测试software interrut
 
