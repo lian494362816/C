@@ -60,4 +60,5 @@ Makefile
         测试undef excption
     002_swi
         测试software interrut
-
+    003_external_interrupt
+        测试按键中断，发现EINT11，有时候松开没有触发中断
