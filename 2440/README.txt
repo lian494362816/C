@@ -62,3 +62,8 @@ Makefile
         测试software interrut
     003_external_interrupt
         测试按键中断，发现EINT11，有时候松开没有触发中断
+    004_timer_interrupt
+        001_normal  
+            定时器中断 
+        002_func_pointer
+            使用函数指针实现器中断
