@@ -67,3 +67,6 @@ Makefile
             定时器中断 
         002_func_pointer
             使用函数指针实现器中断
+
+014_nor_flash
+    nor flash 擦除 读 写 测试
