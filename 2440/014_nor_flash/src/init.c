@@ -4,12 +4,15 @@
 
 int bank0_tacc_set(int value)
 {
-
     /* nor flash can change 0->1, but can't change 1->0
     so can't clear [10:8]
+    00 = 1 clock         001 = 2 clocks
+    010 = 3 clocks       011 = 4 clocks
+    100 = 6 clocks       101 = 8 clocks
+    110 = 10 clocks      111 = 14 clocks
+    use HCLK=100M, theFast access time: 70ns
     */
-    //BANKCON0 &= ~(0x7 << 8);
-    //BANKCON0 |= (value << 8);
+
     BANKCON0 = value << 8;
 
     return 0;

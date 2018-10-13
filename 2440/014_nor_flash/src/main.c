@@ -12,11 +12,12 @@
 
 int main(int argc, char *argv[])
 {
+    bank0_tacc_set(5);
     key_eint_init();
     led_init();
     //timer0_init();
 
-    nor_flash_test();
+    /* nor_flash_test(); */
 
     while(1)
     {
