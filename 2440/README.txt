@@ -69,4 +69,8 @@ Makefile
             使用函数指针实现器中断
 
 014_nor_flash
-    nor flash 擦除 读 写 测试
+    001_test  
+        nor flash 擦除 读 写 测试
+    002_func
+        nor flash 擦除 读 写 封装成函数
+         
