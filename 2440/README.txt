@@ -74,3 +74,8 @@ Makefile
     002_func
         nor flash 擦除 读 写 封装成函数
          
+015_nand_flash
+    nand flash 擦除 读 写， 程序可以从nand flash启动
+
+016_lcd
+    4.3存 lcd 程序程序
