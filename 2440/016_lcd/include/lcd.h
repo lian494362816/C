@@ -40,4 +40,14 @@ typedef struct lcd_param{
 }lcd_param_t;
 
 
+int lcd_register(lcd_param_t *p_lcd_param);
+int lcd_select(char *name);
+int lcd_init(void);
+int lcd_enable(void);
+int lcd_disable(void);
+int lcd_get_param(int *width, int *height, int *bpp_mode, unsigned int *frame_addr);
+void lcd_read_rgb(void);
+void lcd_status_read(void);
+
+
 #endif

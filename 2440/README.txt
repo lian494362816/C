@@ -78,4 +78,4 @@ Makefile
     nand flash 擦除 读 写， 程序可以从nand flash启动
 
 016_lcd
-    4.3存 lcd 程序程序
+    4.3寸 lcd 程序程序

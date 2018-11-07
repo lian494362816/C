@@ -6,6 +6,8 @@
 #include "init.h"
 #include "interrupt.h"
 #include "s3c2440_soc.h"
+#include "my_error.h"
+#include "lcd.h"
 
 
 int main(int argc, char *argv[])
