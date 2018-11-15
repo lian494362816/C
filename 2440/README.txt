@@ -79,3 +79,11 @@ Makefile
 
 016_lcd
     4.3寸 lcd 程序程序
+
+017_touch_screen_adc
+    001_get_x_y_position  
+        获取触摸屏的x,y的数值, 程序流程感觉不理想
+
+    002_calibrate
+        对触摸屏进行校准，目前程序还有问题，校准效果不理想
+    
