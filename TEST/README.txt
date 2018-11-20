@@ -36,3 +36,14 @@
 	04_printf.c
 		va_list va_start va_arg va_end 源码
 		编译时，需要加上-m32
+
+2018_10
+        pointer_sub.c
+        测试指针之间的减法
+    
+2018_11
+    01_macro_return.c
+        可以返回错误的宏
+
+    02_print.c
+        通过VT码打印出不同颜色的log
