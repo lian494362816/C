@@ -191,3 +191,5 @@ mmu_enable:
     orr r0, r0, #(1<<0)  /* enable mmu */
     mcr p15, 0, r0, c1, c0, 0
 
+    mov pc, lr
+
