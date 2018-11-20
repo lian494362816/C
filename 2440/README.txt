@@ -87,3 +87,10 @@ Makefile
     002_calibrate
         对触摸屏进行校准，目前程序还有问题，校准效果不理想
     
+018_cache_mmuc
+    001_enable_Icache 
+        启动 instruction cache, 加快了刷lcd屏的速度
+
+    002_enbale_mmu
+        启动 instruction cache, data cache, mmuc, 刷lcd屏的速度提高数倍
+
