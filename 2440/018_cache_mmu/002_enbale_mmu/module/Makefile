@@ -17,7 +17,7 @@ all:$(OBJS)
 	$(CROSS_COMPILE)gcc $(CFLAGS) -c -o $@ $<
 
 clean:
-	$(RM) $(OBJS) *.o.d
+	$(RM) $(OBJS) .*.o.d
 	$(foreach N,$(MODULES),make -C $(N) clean;)
 
 .PHONY: clean all
