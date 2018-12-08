@@ -6,10 +6,10 @@ SECTIONS {
     __copy_code_start = . ;
     .init :
     {
-        start.o
-        init.o
-        mmu.o
-        nand_flash.o 
+       ./module/start.o
+       ./module/init/init.o
+       ./module/mmu/mmu.o
+       ./module/nand/nand_flash.o
     }
 
     .text :
