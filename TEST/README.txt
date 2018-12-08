@@ -47,3 +47,7 @@
 
     02_print.c
         通过VT码打印出不同颜色的log
+
+2018_12
+    01_error.c
+        测试#error
