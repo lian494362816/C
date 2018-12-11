@@ -165,10 +165,10 @@ sdram_addr:
     bl uart0_init
 
     /* is an undefine instrucion */
-    /* .word 0xeeadc0de */
+     .word 0xeeadc0de
 
     /*software interrupt */
-    /* swi 0x111 */
+     swi 0x111
 
     ldr pc, =main
 
@@ -178,7 +178,7 @@ loop:
 mmu_enable:
 
     /* set ttb address*/
-    ldr r0, =0x32000000
+    ldr r0, =0x33A00000
     mcr p15, 0, r0, c2, c0, 0
 
     /* set Domain0~Domain15, not check access permission*/
