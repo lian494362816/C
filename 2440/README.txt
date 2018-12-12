@@ -94,3 +94,5 @@ Makefile
     002_enbale_mmu
         启动 instruction cache, data cache, mmuc, 刷lcd屏的速度提高数倍
 
+019_simple_uboot
+    最简单的uboot 启动流程
