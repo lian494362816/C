@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
     int c = 0;
     uart0_init();
 
-    printf("please input num[0~7]\n\r");
     while(1)
     {
+        printf("please input num[0~7]\n\r");
         c = getchar();
         putchar(c);
 
