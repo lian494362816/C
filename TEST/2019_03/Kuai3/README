@@ -1,0 +1,34 @@
+
+kuai3.c
+    将原始的数据转换为 预测结果+结果
+    ./kuai3 input_file
+
+test.c
+    计算array二维数的结果
+    可以直接运行
+
+Makefile
+    编译.c 的脚本
+
+do.sh
+    分析数据的脚本
+    执行方式./do.sh xxx.txt
+
+    主要的过程
+    1，执行kuai3.c, 将数据过滤
+    2, 将数据转换成数组
+    3, 将数组封装成二维数组
+    2, 执行test.c, 计算最终的结果
+
+    中间文件
+        tmp1.txt
+            执行kuai3.c, 将结果导出到tmp1.txt
+        tmp2.txt
+            将tmp1.txt的结果变成数组, 结果导出tmp2.txt
+        tmp3.txt
+            将tmp2.txt的数组2行合并成1行，结果导出到tmp3.txt
+        array.h
+            将tmp3.txt 的数组封装成int a[][10] 的二维数组，便于C语言使用
+
+analysis.sh
+    执行 do.sh 自动扫描当前目录下的.txt文件
