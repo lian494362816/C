@@ -32,3 +32,14 @@ do.sh
 
 analysis.sh
     执行 do.sh 自动扫描当前目录下的.txt文件
+
+combination.c  
+    计算各种组合的和值、平均值、峰值
+
+combination.h 
+    用结构体存放各种组合数据的头文件
+
+combination.sh
+    将各种组合的结果输出到data文件
+    将data的数据过滤，变成结构体输出到combination.h
+    执行combination.c ，输出结果 
