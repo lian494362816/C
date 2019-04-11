@@ -51,3 +51,24 @@
 2018_12
     01_error.c
         测试#error
+
+2019_03
+    1_export_symbol.c
+        测试 __EXPORT_SYMBOL宏
+
+    02_test.c 
+        测试?: 的功能 
+
+2019_04 
+    01_test.c 
+        测试--> 的功能, 结论为先减1， 在做小于等于的判断
+
+    02_typeof.c
+        测试typeof的功能，实现max,min 等宏
+
+    03_container_of.c 
+        测试container_of
+
+    04_zero_array.c
+        测试零长度数组
+
