@@ -72,3 +72,21 @@
     04_zero_array.c
         测试零长度数组
 
+    05_open.c
+        INLINE_SYSCALL_CALL 宏的展开
+
+    06_fun_pointer_cmp.c
+        __attribute__((weak, alias("__def_xxx"))); 的测试
+
+    hello.c
+        跟06配合的.c文件
+
+    07_aligned.c 
+        attribute aligned 测试
+
+    08_packed.c
+        attribute packed 测试
+
+    09_format.c
+        attribute format 测试
+    
