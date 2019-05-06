@@ -90,3 +90,53 @@
     09_format.c
         attribute format 测试
     
+2019_05
+    01_case.c
+        测试case 1 ... 2
+
+            1) 发现swtich case 中没有判断语法错误
+            如下面的程序，可以正常编译并运行，不会报错
+                switch(x)
+                {
+                    case 1:
+
+                        break;
+                    ssdf:
+                        brea;
+                }
+            2) 可以使用 "..." 来省略某些过程
+            如
+                switch(x)
+                {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+
+                        break;
+                }
+            等价于
+                switch(x)
+                {
+                    case 1 ... 5:
+
+                        break;
+                }
+                
+    02_constructor.c
+        测试constructor 和 destructor 的功能
+        被constructor 修饰的函数会在main 被调用之前自动调用
+        被destructor  修饰的函数会在main 被调用之后自动调用
+
+    03_mode.c
+        测试__attribute__((mode)) 的功能
+
+    04_noreturn.c  
+        测试noreturn    
+
+    05_constant_p.c   
+        测试 __builtin_costant_p 的功能
+
+
+
