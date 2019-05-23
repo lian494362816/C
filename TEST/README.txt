@@ -138,5 +138,9 @@
     05_constant_p.c   
         测试 __builtin_costant_p 的功能
 
-
-
+    06_label.c
+       测试 __label__ 的作用, 当在宏中定义局部标号
+       可能会出现重复定义，此时可以使用 __label__ 来消除重定义
+   
+    07_define.c
+        测试在宏中使用可变参数
