@@ -144,3 +144,11 @@
    
     07_define.c
         测试在宏中使用可变参数
+
+    08_func_err.c
+        测试PRINT_FUNC_ERR 宏
+
+    09_chinese_word.c
+        通过HZK16 来打印16x16的字符
+        里面涉及到了UTF-8转GBK、在HZK16查找对应的字模数据
+        
