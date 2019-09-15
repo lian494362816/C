@@ -1,0 +1,54 @@
+
+/home/black/C/TEST/2019_09/02_uboot/bin/test.elf:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+40008000 <main>:
+40008000:	e92d4800 	push	{fp, lr}
+40008004:	e28db004 	add	fp, sp, #4
+40008008:	e59f3024 	ldr	r3, [pc, #36]	; 40008034 <__copy_code_start+0x34>
+4000800c:	e5933000 	ldr	r3, [r3]
+40008010:	e59f0020 	ldr	r0, [pc, #32]	; 40008038 <__copy_code_start+0x38>
+40008014:	e12fff33 	blx	r3
+40008018:	e59f3014 	ldr	r3, [pc, #20]	; 40008034 <__copy_code_start+0x34>
+4000801c:	e5933000 	ldr	r3, [r3]
+40008020:	e59f0014 	ldr	r0, [pc, #20]	; 4000803c <__copy_code_start+0x3c>
+40008024:	e12fff33 	blx	r3
+40008028:	e3a03000 	mov	r3, #0
+4000802c:	e1a00003 	mov	r0, r3
+40008030:	e8bd8800 	pop	{fp, pc}
+40008034:	40008040 	andmi	r8, r0, r0, asr #32
+40008038:	40008044 	andmi	r8, r0, r4, asr #32
+4000803c:	40008050 	andmi	r8, r0, r0, asr r0
+
+40008040 <printf>:
+40008040:	c3e11b0c 	mvngt	r1, #12288	; 0x3000
+40008044:	6e69616d 	powvsez	f6, f1, #5.0
+40008048:	206e4920 	rsbcs	r4, lr, r0, lsr #18
+4000804c:	0000000a 	andeq	r0, r0, sl
+40008050:	6e69616d 	powvsez	f6, f1, #5.0
+40008054:	74754f20 	ldrbtvc	r4, [r5], #-3872	; 0xf20
+40008058:	00000a20 	andeq	r0, r0, r0, lsr #20
+4000805c:	3a434347 	bcc	410d8d80 <__bss_start+0x10d0cd0>
+40008060:	74632820 	strbtvc	r2, [r3], #-2080	; 0x820
+40008064:	312d676e 	teqcc	sp, lr, ror #14
+40008068:	312e382e 	teqcc	lr, lr, lsr #16
+4000806c:	2941462d 	stmdbcs	r1, {r0, r2, r3, r5, r9, sl, lr}^
+40008070:	352e3420 	strcc	r3, [lr, #-1056]!	; 0x420
+40008074:	4100312e 	tstmi	r0, lr, lsr #2
+40008078:	00000037 	andeq	r0, r0, r7, lsr r0
+4000807c:	62616561 	rsbvs	r6, r1, #406847488	; 0x18400000
+40008080:	2d010069 	stccs	0, cr0, [r1, #-420]	; 0xfffffe5c
+40008084:	05000000 	streq	r0, [r0]
+40008088:	314d5241 	cmpcc	sp, r1, asr #4
+4000808c:	4a363731 	bmi	40d95d58 <__bss_start+0xd8dca8>
+40008090:	532d465a 	teqpl	sp, #94371840	; 0x5a00000
+40008094:	08090600 	stmdaeq	r9, {r9, sl}
+40008098:	0a010901 	beq	4004a4a4 <__bss_start+0x423f4>
+4000809c:	14041202 	strne	r1, [r4], #-514	; 0x202
+400080a0:	17011501 	strne	r1, [r1, -r1, lsl #10]
+400080a4:	19011803 	stmdbne	r1, {r0, r1, fp, ip}
+400080a8:	1b021a01 	blne	4008e8b4 <__bss_start+0x86804>
+400080ac:	Address 0x400080ac is out of bounds.
+

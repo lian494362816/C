@@ -162,3 +162,9 @@
 2019_08
     01_Makefile_lib
         编译静态库，动态库的Makefile 模板
+
+2019_09
+    01_go.c  
+        测试boot的go命令
+    02_uboot
+        将main.c通过链接脚本编译,然后放到开发板上去运行
